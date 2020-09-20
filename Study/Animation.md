@@ -3,6 +3,10 @@
 - 2가지 방법 존재
   - UIKit를 이용한 UIView의 API
   - Core Animation을 이용한 API
+- simple Animation 이 아니라면 Core Animation 사용을 추천 [(Core Animation은 따로 작성)](https://github.com/everydayiOS/Bookcase-Of-Interstella/blob/master/Study/CoreAnimation.md)
+  - 러닝 커브 높음
+  - iOS의 Animation framework, Cached Bitmap과 Hardware를 내부에서 사용하여 성능이 좋음
+  - Animation 자체는 다른 thread에서 작동
 
 
 ## UIView API 이용하기
