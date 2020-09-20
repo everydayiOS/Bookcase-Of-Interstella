@@ -102,3 +102,23 @@
     
   - **static var curveEaseOut: UIView.AnimationOptions**   
     빠르게 진행됐다가 완료됐을때 천천히 진행   
+    
+    
+## Keyframe Animation
+      애니메이션의 연속적인 처리에 유용한 keyframe   
+      
+   - UIView.animate로는 간단한 애니메이션은 가능
+   - 순차적으로 애니메이션들이 진행된다면 completion 클로저를 이용해서 애니메이션을 구현 *~~(콜백 지옥...)~~*
+   
+   - **animateKeyframes**   
+    ```
+    class func animateKeyframes (
+      withDuration duration: TimeInterval,
+      delay: TimeInterval,
+      options: UIView.KeyframeAnimationOptions = [],
+      animations: @escaping() -> Void,
+      completion: ((Bool) -> Void)? = nil
+      )
+    ```
+    
+   - **addKeyframe**  
