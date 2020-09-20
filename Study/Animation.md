@@ -5,7 +5,7 @@
   - Core Animation을 이용한 API
 
 
-## UIView 이용하기
+## UIView API 이용하기
 
 - iOS 4부터 Closure형태인 animate 메서드를 주로 이용 *~~(언젠가 deprecated 될덧...)~~*
 - 공식 문서에는 UIViewPropertyAnimator 사용 권장 (iOS 10이상 부터 사용 가능한 API)
@@ -53,3 +53,52 @@
     ```
     object.layer.removeAllAnimations()
     ```
+  
+  ### Spring 애니메이션
+  
+  - UIView.animate에는 여러 가지 애니메이션 옵션을 줄 수 잇음
+  
+  - **animate(withDuration: delay: usingSpringWithDamping: initialSpringVelocity: options: completion:)
+    usingSpringWithDamping, initialSpringVelocity(스프링 속도), 여러가지 애니메이션을 제공하는 options을 파라미터로 받는 애니메이션
+    
+    ```
+    class func animate(
+      withDuration duration: TimeInterval,
+      delay: TimeInterval,
+      usingSpringWithDamping dampingRatio: CGFloat,
+      initialSpringVelocity velocity: CGFloat,
+      options: UIView.AnimationOptions = [],
+      animations: @escaping () -> Void,
+      completion: ((Bool) -> Void)? = nil
+     )
+    ```
+    **usingSpringWithDamping**은 스프링 애니메이션이 정지 상태 *(=애니메이션이 끝나갈때)* 근접할 때의 damping 비율을 말함
+    0.0 ~ 1.0까지의 값을 가지고 있음
+    0에 가까울수록 심하게 damping 됨
+    
+    **initialSpringVelocity**은 스프링의 속도
+    0.0 ~ 1.0까지의 값을 가지고 있음
+    0에 가까울수록 스프링의 속도가 빠름
+    
+    
+  ### 애니메이션 옵션
+      옵션들은 배열을 통해서 동시에 사용 가능
+  
+  - **static var allowUserINteraction: UIView.AnimationOptions
+    애니메이션 중에는 터치 이벤트가 disable되는데, 터치 이벤트를 활성화하고 싶을때 사용
+    
+  - **static var repeat: UIView.AnimationOptions
+    무한정으로 애니메이션을 반복하고 싶을때 사용
+    
+  - **static var autoreverse: UIView.AnimationOptions
+    애니메이션을 반대로도 실행할 수 있게 해주는 옵션 (repeat와 함께 사용)
+    
+  - **static var curveEaseInOut: UIView.AnimationOptions
+    기본값
+    천천히 진행됐다가 duration의 중간쯤에 빨라지고, 완료되기 전에 다시 천천히 진행됨
+    
+  - **static var curveEaseIn: UIView.AnimationOptions
+    천천히 진행됐다가 진행되면서 조금씩 속도가 빨라짐
+    
+  - **static var curveEaseOut: UIView.AnimationOptions
+    빠르게 진행됐다가 완료됐을때 천천히 진행
