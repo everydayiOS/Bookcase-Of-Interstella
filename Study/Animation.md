@@ -111,14 +111,35 @@
    - 순차적으로 애니메이션들이 진행된다면 completion 클로저를 이용해서 애니메이션을 구현 *~~(콜백 지옥...)~~*
    
    - **animateKeyframes**   
-    ```
-    class func animateKeyframes (
+   
+   ```
+   class func animateKeyframes (
       withDuration duration: TimeInterval,
       delay: TimeInterval,
       options: UIView.KeyframeAnimationOptions = [],
       animations: @escaping() -> Void,
       completion: ((Bool) -> Void)? = nil
       )
-    ```
+   ```
     
    - **addKeyframe**  
+   
+   ```
+   class func addKeyframe (
+    withRelativeStartTime frameStaratTiem: Double,
+    relativeDuration frameDuration: Double,
+    animations: @escaping () -> Void
+    )
+   ```
+   UIView.animateKeyframes 안에 addKeyframe을 추가하는 방식으로 시간의 순서대로 애니메이션 동작 가능   
+   
+   ```
+   UIView.animateKeyframes(withDuration: 4.0, delay: 0, options: [],
+    animations: {
+      UIView.addKeyframe(withRelativeStartTime: 0.0, relativeDuration: 0.25) {self.animate1()}
+      UIView.addKeyframe(withRelativeStartTime: 0.25, relativeDuration: 0.25) {self.animate2()}
+      UIView.addKeyframe(withRelativeStartTime: 0.50, relativeDuration: 0.25) {self.animate3()}
+      UIView.addKeyframe(withRelativeStartTime: 0.75, relativeDuration: 0.25) {self.animate4()}
+     }, completion: nil)
+   ```
+   0.25초씩 각각의 애니메이션이 진행됨
