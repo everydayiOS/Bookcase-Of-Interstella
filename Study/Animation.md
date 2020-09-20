@@ -84,21 +84,21 @@
   ### 애니메이션 옵션
       옵션들은 배열을 통해서 동시에 사용 가능
   
-  - **static var allowUserINteraction: UIView.AnimationOptions
+  - **static var allowUserINteraction: UIView.AnimationOptions**
     애니메이션 중에는 터치 이벤트가 disable되는데, 터치 이벤트를 활성화하고 싶을때 사용
     
-  - **static var repeat: UIView.AnimationOptions
+  - **static var repeat: UIView.AnimationOptions**
     무한정으로 애니메이션을 반복하고 싶을때 사용
     
-  - **static var autoreverse: UIView.AnimationOptions
+  - **static var autoreverse: UIView.AnimationOptions**
     애니메이션을 반대로도 실행할 수 있게 해주는 옵션 (repeat와 함께 사용)
     
-  - **static var curveEaseInOut: UIView.AnimationOptions
+  - **static var curveEaseInOut: UIView.AnimationOptions**
     기본값
     천천히 진행됐다가 duration의 중간쯤에 빨라지고, 완료되기 전에 다시 천천히 진행됨
     
-  - **static var curveEaseIn: UIView.AnimationOptions
+  - **static var curveEaseIn: UIView.AnimationOptions**
     천천히 진행됐다가 진행되면서 조금씩 속도가 빨라짐
     
-  - **static var curveEaseOut: UIView.AnimationOptions
+  - **static var curveEaseOut: UIView.AnimationOptions**
     빠르게 진행됐다가 완료됐을때 천천히 진행
