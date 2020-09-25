@@ -22,19 +22,19 @@ DispatchQueue.global().async {
 - Main (Serial) : Main Thread에서 Task를 순차적으로 수행한다.
 - Global (Concurrent) : 여러 개의 스레드를 생성해서 동시에 여러 Task를 처리한다.
 6가지 종류를 선택할 수 있으며 우선순위에 따라 수행된다.
- - userInteractive : 거의 즉시, UI 업데이트, Animation
- - userInitiated : 몇 초, 유저가 필요하지만 비동기적으로 처리된 작업
- - default : 일반적인 작업
- - utility : 몇 초 ~ 몇 분, 길게 실행되는 작업 e.g. 네트워킹, 계산
- - background : 속도보다 에너지 효율성 중시, 몇 분이상, e.g. 데이터 미리 가져오기
- - unspecified : Legacy API
+	- userInteractive : 거의 즉시, UI 업데이트, Animation
+ 	- userInitiated : 몇 초, 유저가 필요하지만 비동기적으로 처리된 작업
+	- default : 일반적인 작업
+	- utility : 몇 초 ~ 몇 분, 길게 실행되는 작업 e.g. 네트워킹, 계산
+	- background : 속도보다 에너지 효율성 중시, 몇 분이상, e.g. 데이터 미리 가져오기
+	- unspecified : Legacy API
 - Private (Custom) : 기본적으로 Serial로 생성되지만 Concurrent로 변경할 수 있다. 레이블을 지정하여 필요한 만큼 Queue를 생성할 수 있다.
 
 ### Serial과 Concurrent
 - 직렬(Serial) : Main에서 시킨 작업을 다른 한 개의 스레드에서 처리한다.
- - 순서가 중요한 작업에 적합하다.
+	- 순서가 중요한 작업에 적합하다.
 - 동시(Concurrent) : Main에서 시킨 작업을 다른 여러 개의 스레드에서 처리한다.
- - 독립적이지만 유사한 여러 개의 작업을 처리할 때 적합하다.  e.g. 이미지를 다운받아 뿌려주는 collection view
+	- 독립적이지만 유사한 여러 개의 작업을 처리할 때 적합하다.  e.g. 이미지를 다운받아 뿌려주는 collection view
 
 ## 3️⃣ 동기 vs 비동기
 - 동기(Sync) : 다른 스레드에서 일을 시작 시키고, 작업이 끝날때까지 block 상태로 기다린다.
