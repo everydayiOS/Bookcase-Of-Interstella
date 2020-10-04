@@ -1,0 +1,15 @@
+included:
+
+excluded:
+- Pods
+- BookcaseOfInterstella/AppDelegate.swift
+- BookcaseOfInterstella/SceneDelegate.swift
+- BookcaseOfInterstellaTests
+
+disabled_rules:
+- trailing_whitespace
+
+force_cast: warning
+
+line_length: 99
+indentation: 2

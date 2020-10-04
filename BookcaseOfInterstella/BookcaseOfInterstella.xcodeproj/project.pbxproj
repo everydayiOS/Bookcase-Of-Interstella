@@ -15,6 +15,9 @@
 		6A757369251320A20060A4B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A757368251320A20060A4B5 /* Assets.xcassets */; };
 		6A75736C251320A20060A4B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A75736A251320A20060A4B5 /* LaunchScreen.storyboard */; };
 		6A757377251320A20060A4B5 /* BookcaseOfInterstellaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A757376251320A20060A4B5 /* BookcaseOfInterstellaTests.swift */; };
+		8656C1B1F31B395F09876DD9 /* Pods_BookcaseOfInterstellaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC274EECD17284CC85A0AC5 /* Pods_BookcaseOfInterstellaTests.framework */; };
+		B5AE2DA3DEED352C008E7FDF /* Pods_BookcaseOfInterstella.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD303C3DAA7AF40A20D0ED1 /* Pods_BookcaseOfInterstella.framework */; };
+		D945E3CE252A0722000DEE69 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = D945E3CD252A0722000DEE69 /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2BD303C3DAA7AF40A20D0ED1 /* Pods_BookcaseOfInterstella.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookcaseOfInterstella.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52303CDA2B8E92BFD31D60F9 /* Pods-BookcaseOfInterstellaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookcaseOfInterstellaTests.debug.xcconfig"; path = "Target Support Files/Pods-BookcaseOfInterstellaTests/Pods-BookcaseOfInterstellaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5C9880D18FCC331AA0A9C987 /* Pods-BookcaseOfInterstellaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookcaseOfInterstellaTests.release.xcconfig"; path = "Target Support Files/Pods-BookcaseOfInterstellaTests/Pods-BookcaseOfInterstellaTests.release.xcconfig"; sourceTree = "<group>"; };
+		624D58512BC785FB40CF0E98 /* Pods-BookcaseOfInterstella.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookcaseOfInterstella.release.xcconfig"; path = "Target Support Files/Pods-BookcaseOfInterstella/Pods-BookcaseOfInterstella.release.xcconfig"; sourceTree = "<group>"; };
 		6A757359251320A00060A4B5 /* BookcaseOfInterstella.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookcaseOfInterstella.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A75735C251320A00060A4B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A75735E251320A00060A4B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +47,9 @@
 		6A757372251320A20060A4B5 /* BookcaseOfInterstellaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookcaseOfInterstellaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A757376251320A20060A4B5 /* BookcaseOfInterstellaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookcaseOfInterstellaTests.swift; sourceTree = "<group>"; };
 		6A757378251320A20060A4B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D945E3CD252A0722000DEE69 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		EDC274EECD17284CC85A0AC5 /* Pods_BookcaseOfInterstellaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookcaseOfInterstellaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE0FD583C600ABA55EB32EB3 /* Pods-BookcaseOfInterstella.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookcaseOfInterstella.debug.xcconfig"; path = "Target Support Files/Pods-BookcaseOfInterstella/Pods-BookcaseOfInterstella.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5AE2DA3DEED352C008E7FDF /* Pods_BookcaseOfInterstella.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +65,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8656C1B1F31B395F09876DD9 /* Pods_BookcaseOfInterstellaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37526EC22F3AFD5CC3DDFA1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BD303C3DAA7AF40A20D0ED1 /* Pods_BookcaseOfInterstella.framework */,
+				EDC274EECD17284CC85A0AC5 /* Pods_BookcaseOfInterstellaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6A757350251320A00060A4B5 = {
 			isa = PBXGroup;
 			children = (
+				D945E3CD252A0722000DEE69 /* .swiftlint.yml */,
 				6A75735B251320A00060A4B5 /* BookcaseOfInterstella */,
 				6A757375251320A20060A4B5 /* BookcaseOfInterstellaTests */,
 				6A75735A251320A00060A4B5 /* Products */,
+				F368728CB5BF35190A2751E8 /* Pods */,
+				37526EC22F3AFD5CC3DDFA1B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +126,17 @@
 			path = BookcaseOfInterstellaTests;
 			sourceTree = "<group>";
 		};
+		F368728CB5BF35190A2751E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE0FD583C600ABA55EB32EB3 /* Pods-BookcaseOfInterstella.debug.xcconfig */,
+				624D58512BC785FB40CF0E98 /* Pods-BookcaseOfInterstella.release.xcconfig */,
+				52303CDA2B8E92BFD31D60F9 /* Pods-BookcaseOfInterstellaTests.debug.xcconfig */,
+				5C9880D18FCC331AA0A9C987 /* Pods-BookcaseOfInterstellaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A75737B251320A20060A4B5 /* Build configuration list for PBXNativeTarget "BookcaseOfInterstella" */;
 			buildPhases = (
+				ABC58630F51A4C058FC504E1 /* [CP] Check Pods Manifest.lock */,
 				6A757355251320A00060A4B5 /* Sources */,
 				6A757356251320A00060A4B5 /* Frameworks */,
 				6A757357251320A00060A4B5 /* Resources */,
+				D945E3CC252A0463000DEE69 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -126,6 +163,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A75737E251320A20060A4B5 /* Build configuration list for PBXNativeTarget "BookcaseOfInterstellaTests" */;
 			buildPhases = (
+				FDC80D4D09D8FCFD623BB822 /* [CP] Check Pods Manifest.lock */,
 				6A75736E251320A20060A4B5 /* Sources */,
 				6A75736F251320A20060A4B5 /* Frameworks */,
 				6A757370251320A20060A4B5 /* Resources */,
@@ -183,6 +221,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D945E3CE252A0722000DEE69 /* .swiftlint.yml in Resources */,
 				6A75736C251320A20060A4B5 /* LaunchScreen.storyboard in Resources */,
 				6A757369251320A20060A4B5 /* Assets.xcassets in Resources */,
 				6A757364251320A00060A4B5 /* Main.storyboard in Resources */,
@@ -197,6 +236,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ABC58630F51A4C058FC504E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BookcaseOfInterstella-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D945E3CC252A0463000DEE69 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		FDC80D4D09D8FCFD623BB822 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BookcaseOfInterstellaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6A757355251320A00060A4B5 /* Sources */ = {
@@ -366,6 +469,7 @@
 		};
 		6A75737C251320A20060A4B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE0FD583C600ABA55EB32EB3 /* Pods-BookcaseOfInterstella.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -384,6 +488,7 @@
 		};
 		6A75737D251320A20060A4B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 624D58512BC785FB40CF0E98 /* Pods-BookcaseOfInterstella.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -402,6 +507,7 @@
 		};
 		6A75737F251320A20060A4B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52303CDA2B8E92BFD31D60F9 /* Pods-BookcaseOfInterstellaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -424,6 +530,7 @@
 		};
 		6A757380251320A20060A4B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C9880D18FCC331AA0A9C987 /* Pods-BookcaseOfInterstellaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
