@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JlR-Sj-dAT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JlR-Sj-dAT">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,11 +15,68 @@
                     <view key="view" contentMode="scaleToFill" id="seB-Rl-JQh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xYi-QO-nFb">
+                                <rect key="frame" x="151" y="373" width="112" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XU3-Na-bTo">
+                                        <rect key="frame" x="0.0" y="0.0" width="112" height="30"/>
+                                        <state key="normal" title="글쓰기"/>
+                                        <connections>
+                                            <action selector="WriteButtonDidTap:" destination="QSe-gY-LFa" eventType="touchUpInside" id="vx5-sl-euZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctr-3B-39K">
+                                        <rect key="frame" x="0.0" y="30" width="112" height="30"/>
+                                        <state key="normal" title="즐겨찾기 편지 목록"/>
+                                        <connections>
+                                            <action selector="bookmarkButtonDidTap:" destination="QSe-gY-LFa" eventType="touchUpInside" id="JuO-Vm-12Q"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1k1-qa-7By" userLabel="임시보관 편지 목록">
+                                        <rect key="frame" x="0.0" y="60" width="112" height="30"/>
+                                        <state key="normal" title="임시보관 편지 목록"/>
+                                        <connections>
+                                            <action selector="temporaryButtonDidTap:" destination="QSe-gY-LFa" eventType="touchUpInside" id="yhg-19-Grz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBk-Er-GT7">
+                                        <rect key="frame" x="0.0" y="90" width="112" height="30"/>
+                                        <state key="normal" title="편지 도착했을때"/>
+                                        <connections>
+                                            <action selector="arrivalButtonDidTap:" destination="QSe-gY-LFa" eventType="touchUpInside" id="4fP-VM-gCw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ElH-DM-EAE">
+                                        <rect key="frame" x="0.0" y="120" width="112" height="30"/>
+                                        <state key="normal" title="설정"/>
+                                        <connections>
+                                            <action selector="settingButtonDidTap:" destination="QSe-gY-LFa" eventType="touchDragInside" id="Rlh-3q-9A1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ViewController에 outlet 연결해 뒀으니 화면 이동부터 채워넣으면 됩니다." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kt-4X-4Wa">
+                                <rect key="frame" x="10" y="523" width="394" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Q5j-Og-OV5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0kt-4X-4Wa" firstAttribute="centerX" secondItem="seB-Rl-JQh" secondAttribute="centerX" id="BaI-1k-mkM"/>
+                            <constraint firstItem="0kt-4X-4Wa" firstAttribute="top" secondItem="xYi-QO-nFb" secondAttribute="bottom" id="EYa-EN-pWX"/>
+                            <constraint firstItem="xYi-QO-nFb" firstAttribute="centerY" secondItem="seB-Rl-JQh" secondAttribute="centerY" id="IVg-kM-YmJ"/>
+                            <constraint firstItem="0kt-4X-4Wa" firstAttribute="leading" secondItem="seB-Rl-JQh" secondAttribute="leading" constant="10" id="PAs-Vo-F5z"/>
+                            <constraint firstAttribute="trailing" secondItem="0kt-4X-4Wa" secondAttribute="trailing" constant="10" id="Zd2-hU-NwW"/>
+                            <constraint firstItem="xYi-QO-nFb" firstAttribute="centerX" secondItem="seB-Rl-JQh" secondAttribute="centerX" id="u1V-FY-33d"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ep1-2u-ZCY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="QSe-gY-LFa" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2414" y="981"/>
         </scene>
