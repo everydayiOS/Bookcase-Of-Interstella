@@ -32,7 +32,9 @@ class ViewController: UIViewController {
     
     // 편지 도착 화면
     @IBAction func arrivalButtonDidTap(_ sender: Any) {
-        
+        let arrivalVC = ArrivalViewController(nibName: "ArrivalViewController", bundle: nil)
+        // TODO - 데이터 설정
+        present(arrivalVC, animated: true, completion: nil)
     }
     
     //설정
