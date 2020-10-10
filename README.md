@@ -101,12 +101,16 @@ struct letter {
 }
 ```
 - 편지 도착 시 모달로 표시 / 나머지 화면은 push로 이동
-- ViewController 링크 누락된 부분 추가 (master)
 - Local Notification 으로 구현
-- Userdefaults에 데이터 저장, 삭제 함수명 정하기
-- Userdefaults에 timestamp를 key로 설정
 - 임시보관함 : 유효기간 경과한 편지는 자동 삭제, isBookmarked false인 편지만 표시
 - 즐겨찾기 : isBookmarked true인 편지만 표시
+- Userdefaults에 timestamp를 key로 설정
+- master - Userdefaults에 데이터 저장, 삭제 함수 구현 -> 워닝닝님
+- master - ViewController 링크 누락된 부분 추가 -> 워닝닝님
+
+- 10/18 일요일 21:00
+  - 각자 화면 기능에 대한 정의
+  - 코드리뷰(어려웠던 점, 신경썼던 점 공유)
 
 ### 커밋 메시지
 - git karma style
