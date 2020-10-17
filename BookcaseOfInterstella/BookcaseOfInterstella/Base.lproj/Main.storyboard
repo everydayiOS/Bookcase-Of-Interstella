@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="XEU-wT-FP6">
             <objects>
-                <viewController id="JlR-Sj-dAT" sceneMemberID="viewController">
+                <viewController id="JlR-Sj-dAT" customClass="ViewController" customModule="BookcaseOfInterstella" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="seB-Rl-JQh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

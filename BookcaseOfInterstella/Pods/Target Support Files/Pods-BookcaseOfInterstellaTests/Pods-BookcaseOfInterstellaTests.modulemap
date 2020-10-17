@@ -1,0 +1,6 @@
+framework module Pods_BookcaseOfInterstellaTests {
+  umbrella header "Pods-BookcaseOfInterstellaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
