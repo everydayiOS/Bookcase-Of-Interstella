@@ -22,7 +22,9 @@ class ViewController: UIViewController {
     
     // 즐겨찾기 편지 목록
     @IBAction func bookmarkButtonDidTap(_ sender: Any) {
-        
+        let favoriteVC = FavoriteViewController(nibName: "FavoriteViewController", bundle: nil)
+        favoriteVC.modalPresentationStyle = .fullScreen
+        self.present(favoriteVC, animated: true, completion: nil)
     }
     
     // 임시보관 편지 목록

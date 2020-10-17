@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoriteCell" rowHeight="760" id="KGk-i7-Jjw" customClass="FavoriteCell" customModule="BookcaseOfInterstella" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="361" height="760"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="361" height="760"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0XZ-Vc-wO8">
+                        <rect key="frame" x="20" y="10" width="321" height="321"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="0XZ-Vc-wO8" secondAttribute="height" multiplier="1:1" id="up3-tl-ss8"/>
+                        </constraints>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="글글글" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Whb-eL-cog">
+                        <rect key="frame" x="20" y="336" width="321" height="358"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020. 10. 10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qVE-St-NbD">
+                        <rect key="frame" x="129" y="706" width="103.5" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxU-fa-lup">
+                        <rect key="frame" x="320" y="704" width="21" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <state key="normal" image="bookmark" catalog="system"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yi6-RC-QFn">
+                        <rect key="frame" x="20" y="706" width="46.5" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Whb-eL-cog" firstAttribute="top" secondItem="0XZ-Vc-wO8" secondAttribute="bottom" constant="5" id="03N-wm-bDd"/>
+                    <constraint firstItem="0XZ-Vc-wO8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="0B5-hb-g9o"/>
+                    <constraint firstItem="fxU-fa-lup" firstAttribute="trailing" secondItem="Whb-eL-cog" secondAttribute="trailing" id="20g-9Z-gsA"/>
+                    <constraint firstItem="yi6-RC-QFn" firstAttribute="leading" secondItem="Whb-eL-cog" secondAttribute="leading" id="ATx-Yl-MQP"/>
+                    <constraint firstItem="0XZ-Vc-wO8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="StA-1n-qha"/>
+                    <constraint firstItem="0XZ-Vc-wO8" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Zh2-9D-NVh"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="fxU-fa-lup" secondAttribute="bottom" constant="20" id="axC-XI-APd"/>
+                    <constraint firstItem="qVE-St-NbD" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="fv2-ug-ZhD"/>
+                    <constraint firstItem="fxU-fa-lup" firstAttribute="top" secondItem="Whb-eL-cog" secondAttribute="bottom" constant="10" id="g7S-ld-L0K"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="yi6-RC-QFn" secondAttribute="bottom" constant="20" id="hCP-uu-54I"/>
+                    <constraint firstItem="Whb-eL-cog" firstAttribute="width" secondItem="0XZ-Vc-wO8" secondAttribute="width" id="iaW-wj-fja"/>
+                    <constraint firstItem="Whb-eL-cog" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="j9W-ny-uDD"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="qVE-St-NbD" secondAttribute="bottom" constant="20" id="o9o-M6-VcJ"/>
+                    <constraint firstAttribute="trailing" secondItem="0XZ-Vc-wO8" secondAttribute="trailing" constant="20" id="tI8-AY-kDK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bookMarkButton" destination="fxU-fa-lup" id="Ap8-0r-7p9"/>
+                <outlet property="photoImage" destination="0XZ-Vc-wO8" id="5x2-lS-gAa"/>
+                <outlet property="textView" destination="Whb-eL-cog" id="Bud-uC-XwF"/>
+                <outlet property="writtenDate" destination="qVE-St-NbD" id="fpF-TJ-Seq"/>
+                <outlet property="writtenLabel" destination="yi6-RC-QFn" id="LQu-ob-Bzm"/>
+            </connections>
+            <point key="canvasLocation" x="148.55072463768118" y="32.8125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bookmark" catalog="system" width="112" height="128"/>
+    </resources>
+</document>
