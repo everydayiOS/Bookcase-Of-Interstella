@@ -5,6 +5,8 @@ target 'BookcaseOfInterstella' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'SwiftLint'
+  pod 'SwiftyJSON', '~> 4.0'
+  pod 'RealmSwift'
 
   # Pods for BookcaseOfInterstella
 

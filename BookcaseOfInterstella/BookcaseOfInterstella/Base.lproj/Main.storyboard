@@ -3,7 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,12 +24,14 @@
                                         <state key="normal" title="글쓰기"/>
                                         <connections>
                                             <action selector="WriteButtonDidTap:" destination="QSe-gY-LFa" eventType="touchUpInside" id="vx5-sl-euZ"/>
+                                            <action selector="writeButtonDidTap:" destination="JlR-Sj-dAT" eventType="touchUpInside" id="onv-aR-muA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctr-3B-39K">
                                         <rect key="frame" x="0.0" y="30" width="112" height="30"/>
                                         <state key="normal" title="즐겨찾기 편지 목록"/>
                                         <connections>
+                                            <action selector="bookmarkButtonDidTap:" destination="JlR-Sj-dAT" eventType="touchUpInside" id="31x-qa-prc"/>
                                             <action selector="bookmarkButtonDidTap:" destination="QSe-gY-LFa" eventType="touchUpInside" id="JuO-Vm-12Q"/>
                                         </connections>
                                     </button>
@@ -37,6 +39,7 @@
                                         <rect key="frame" x="0.0" y="60" width="112" height="30"/>
                                         <state key="normal" title="임시보관 편지 목록"/>
                                         <connections>
+                                            <action selector="temporaryButtonDidTap:" destination="JlR-Sj-dAT" eventType="touchUpInside" id="0N2-9r-OpP"/>
                                             <action selector="temporaryButtonDidTap:" destination="QSe-gY-LFa" eventType="touchUpInside" id="yhg-19-Grz"/>
                                         </connections>
                                     </button>
@@ -51,6 +54,7 @@
                                         <rect key="frame" x="0.0" y="120" width="112" height="30"/>
                                         <state key="normal" title="설정"/>
                                         <connections>
+                                            <action selector="settingButtonDidTap:" destination="JlR-Sj-dAT" eventType="touchUpInside" id="8hi-vK-8Sj"/>
                                             <action selector="settingButtonDidTap:" destination="QSe-gY-LFa" eventType="touchDragInside" id="Rlh-3q-9A1"/>
                                         </connections>
                                     </button>

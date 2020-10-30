@@ -1,16 +1,30 @@
 PODS:
+  - Realm (10.1.1):
+    - Realm/Headers (= 10.1.1)
+  - Realm/Headers (10.1.1)
+  - RealmSwift (10.1.1):
+    - Realm (= 10.1.1)
   - SwiftLint (0.40.3)
+  - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
+  - RealmSwift
   - SwiftLint
+  - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   trunk:
+    - Realm
+    - RealmSwift
     - SwiftLint
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Realm: 784ca1da1453e31a9c9adc14445421a81f316119
+  RealmSwift: cc52fe0dcea56387274dff36e19219e055a3bb84
   SwiftLint: dfd554ff0dff17288ee574814ccdd5cea85d76f7
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: f5c2546eec84ddc765253ab0d3835a3cdc6431d7
+PODFILE CHECKSUM: 9d3a303b0244d2cbe841df771f0ba345a1cde24f
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.0
