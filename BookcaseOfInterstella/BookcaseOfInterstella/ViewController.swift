@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     
     // 글쓰기
     @IBAction func writeButtonDidTap(_ sender: Any) {
-        DataController().write("ddd", photo: nil)
+        LetterController.letter.writeLetter("ddd", photo: nil)
     }
     
     // 즐겨찾기 편지 목록
